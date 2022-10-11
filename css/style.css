@@ -1,0 +1,131 @@
+/* Add all your styles here */
+* {
+  box-sizing: border-box;
+  margin:0; padding:0;
+  
+  text-decoration: none;
+}
+
+:root {
+  --color-primary: #009579;
+  --color-primary-dark: #007f67;
+  --color-secondary: #252cba;
+  --color-error: #cc3333;
+  --color-success: #4bb544;
+  --border-radius: 4px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:18px;
+  background: var(--color-primary);
+}
+
+.container {
+  width:400px;
+  max-width: 400px;
+  padding: 1rem 2rem;
+  background: #ffffff;
+  display:block;
+  border-radius: var(--border-radius);
+}
+
+.form-hidden {
+  display: none;
+}
+
+#form > *:first-child {
+  margin-top: 0;
+}
+
+#form > *:last-child {
+  margin-bottom:0;
+}
+
+.form-title {
+  text-align: center;
+}
+.form-message {
+  text-align: center;
+  font-size: 0.85rem;
+}
+.form-error-message {
+  color: var(--color-error);
+}
+
+.form-success-message {
+  color: var(--color-success);
+}
+
+.input-form {
+  margin: 18px 0;
+}
+
+.form-input {
+  width:100%;
+  font-size: 18px;
+  padding:8px;
+  border-radius: var(--border-radius);
+  outline: none;
+  background: #dddddd;
+  transition: background 2s linear;
+}
+
+.input-error-messages {
+  color: var(--color-error);
+  
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+
+.form-input:focus {
+  border: 2px solid var(--color-primary-dark);
+  background: #ffffff;
+}
+
+.form-input:hover {
+  background: #eeeee;
+}
+
+.form-input-error {
+  color: var(--color-error);
+  border: 2px solid var(--color-error);
+  background:#ffffff;
+}
+
+.form-button {
+  width: 100%;
+  color: #ffffff;
+  background: var(--color-primary);
+  font-size: 1.1rem;
+  padding:10px;
+  cursor: pointer;
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+.form-button:hover {
+  background: var(--color-primary-dark);
+}
+
+.form-button:active {
+  transform: scale(0.98);
+}
+
+.form-text {
+  text-align: center;
+  margin: 1rem;
+}
+
+.form-link {
+  color: var(--color-secondary);
+}
+
+.form-link:hover {
+  text-decoration: underline;
+}
+

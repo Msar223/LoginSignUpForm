@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>loginForm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Supherhero">
+    <meta name="keywords" content="programming hero,learn programming">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+    
+
+    <!--custom css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+
+   <form  class="signin-form" id="login">
+     <h1 class="form-title">Login</h1>
+     <div class="form-message"></div>
+     
+     <div class="input-form">
+       <input type="text" class="form-input" id="username1"placeholder="username or email" autofocus name="username" required>
+       <div class="input-error-messages"></div>
+     </div>
+     
+     <div class="input-form">
+       <input type="password" id="password1"class="form-input" placeholder="password" name="password" required>
+       <div class="input-error-messages"></div>
+     </div>
+     
+      <input class="form-button" value="Login" name="login" type="submit">
+   
+     <p class="form-text">
+       <a class="form-link" href="">Forget password</a>
+     </p>
+     <p class="form-text">
+       <a class="form-link" id="createAccount-link" href="./">Don't have an account? create account</a>
+     </p>
+   </form>
+   
+  <form action="" class="create-account form-hidden"  id="createAccount">
+     <h1>Create Account</h1>
+     <div class="form-success-message"></div>
+     
+     <div class="input-form">
+       <input type="text" class="form-input" id="username" placeholder="username" autofocus name="username" required>
+       <div class="input-error-messages"></div>
+     </div>
+     
+     <div class="input-form">
+       <input type="email" class="form-input" id="email" placeholder="Email" name="username" required>
+       <div class="input-error-messages"></div>
+     </div>
+     
+     <div class="input-form">
+       <input type="password" class="form-input" id="password" placeholder="password" name="password" required>
+       <div class="input-error-messages"></div>
+     </div>
+     
+     <div class="input-form">
+       <input type="password" class="form-input" id="confirm-password" placeholder="confirm password" name="password" required>
+       <div class="input-error-messages"></div>
+     </div>
+     
+       <input class="form-button" value="Login" id="login" type="submit">
+   
+     
+     <p class="form-text">
+       <a class="form-link" id="login-link" href="./">Already have an account? Sign in</a>
+     </p>
+   </form>
+
+</div>
+
+
+
+
+
+<!--main js-->
+<script src="js/main.js"></script>
+</body>
+</html>
